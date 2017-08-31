@@ -1,4 +1,6 @@
-package com.simple.factory.modul;
+package com.simple.factory.web;
+
+import com.simple.factory.modul.*;
 
 /**
  * Created by zhangwei on 17/8/25.

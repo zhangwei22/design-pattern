@@ -1,7 +1,7 @@
 package com.simple.factory;
 
 import com.simple.factory.modul.Operation;
-import com.simple.factory.modul.OperationFactory;
+import com.simple.factory.web.OperationFactory;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,6 +17,6 @@ public class Application implements InitializingBean {
     public void afterPropertiesSet() throws Exception {
         Operation operation = OperationFactory.createOperate("*");
         Double result = operation.getResult(12.5, 89.6);
-        System.out.println("result: " + result);
+        System.out.println("计算结果: " + result);
     }
 }
