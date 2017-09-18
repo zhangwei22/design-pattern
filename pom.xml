@@ -15,6 +15,7 @@
 		<module>01-simple-factory</module>
 		<module>02-strategy</module>
 		<module>06-decorate</module>
+		<module>thread-security</module>
 	</modules>
 
 	<parent>
