@@ -14,7 +14,7 @@ public class NewDateUtil {
         System.out.println(instant);
 
         LocalDate localDate = LocalDate.now();
-        //System.out.println(localDate);
+        System.out.println(localDate);
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy年MM月dd日");
         String text = localDate.format(dateTimeFormatter);
         System.out.println(text);

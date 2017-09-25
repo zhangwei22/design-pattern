@@ -1,5 +1,7 @@
 package com.concurrent.handle.example.test12;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  * Created by zhangwei on 2017/9/21.
  */
@@ -17,6 +19,7 @@ public class ProducerUtil {
                 }
             }
         }
+        AtomicInteger a = new AtomicInteger();
         return producer;
     }
 }

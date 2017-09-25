@@ -8,6 +8,7 @@ import java.util.concurrent.ExecutorService;
  * Created by zhangwei on 2017/9/18.
  */
 public class DeadLockTest {
+
     static Object o1 = new Object(), o2 = new Object();
 
     public static void main(String[] args) {

@@ -25,6 +25,8 @@ public class ThreadPoolUtil {
      * unit - keepAliveTime参数的时间单位，线程池维护线程所允许的空闲时间的单位:秒 。
      * workQueue - 执行前用于保持任务的队列（缓冲队列）。此队列仅保持由execute 方法提交的 Runnable 任务。
      * RejectedExecutionHandler -线程池对拒绝任务的处理策略(重试添加当前的任务，自动重复调用execute()方法)
+     *
+     * http://blog.csdn.net/xtwolf008/article/details/7343233
      */
     public ThreadPoolUtil() {
         threadPoolExecutor = new ThreadPoolExecutor(10, 30, 30, TimeUnit.SECONDS, new ArrayBlockingQueue(10),
@@ -58,5 +60,6 @@ public class ThreadPoolUtil {
                 }
             });
         }
+        System.out.println("run end!");
     }
 }
