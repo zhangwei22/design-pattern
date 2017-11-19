@@ -6,20 +6,20 @@ import java.util.concurrent.atomic.AtomicInteger;
  * Created by zhangwei on 2017/9/21.
  */
 public class ProducerUtil {
-    private volatile static Producer producer;
+    private volatile static ProducerUtil producerUtil;
 
     private ProducerUtil() {
     }
 
-    public static Producer getProducer() {
-        if (producer == null) {
+    public static ProducerUtil getProducer() {
+        if (producerUtil == null) {
             synchronized (ProducerUtil.class) {
-                if (producer == null) {
-                    producer = new Producer();
+                if (producerUtil == null) {
+                    producerUtil = new ProducerUtil();
                 }
             }
         }
         AtomicInteger a = new AtomicInteger();
-        return producer;
+        return producerUtil;
     }
 }
