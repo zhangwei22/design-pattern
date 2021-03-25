@@ -8,6 +8,9 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * 设计模式：策略模式
+ */
 @SpringBootApplication
 public class Application implements InitializingBean {
 
